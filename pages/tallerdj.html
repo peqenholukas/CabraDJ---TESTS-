@@ -5,22 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/consoladj.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79d1760261.js" crossorigin="anonymous"></script>
     <title>CabraDJ | Taller de DJ</title>
 </head>
-<header id="inicio_de_pagina"> <!-- Comienzo de Menu de navegacion -->
-    <nav>  
-            <ul> 
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="#">TallerDJ</a></li>
-                <li><a href="./eventos.html">Eventos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>    
-    </nav>
-</header> <!-- Fin de Menu de navegacion -->
+<header> <!-- Comienzo de Menu de navegacion -->
+    <div class="menu">
+        <nav class="menu__items">  
+            <div class="menu__logo">
+                 <a href="./index.html">CABRA<span>DJ</span></a>
+            </div>
+                <ul> 
+                    <li><a href="./#.html">INICIO</a></li>
+                    <li><a href="./pages/servicios.html">SERVICIOS</a></li>
+                    <li><a href="./pages/tallerdj.html">TALLERDJ</a></li>  <!-- Le estoy buscando un uso todavia -->
+                    <li><a href="./pages/eventos.html">EVENTOS</a></li>
+                    <li><a href="./pages/fotos.html">FOTOS</a></li>
+                    <li><a href="./pages/merch.html">MERCHANDISING</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                </ul>                   
+        </nav>
+    </div>
+    
+    <div class="respmenu">
+        <div class="menu__logo">
+            <a href="./index.html">CABRA<span>DJ</span></a>
+        </div>
+        <input type="checkbox">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+        <nav>
+          <ul>
+            <li><a href="./#.html">INICIO</a></li>
+            <li><a href="./pages/servicios.html">SERVICIOS</a></li>
+            <li><a href="./pages/tallerdj.html">TALLERDJ</a></li>  <!-- Le estoy buscando un uso todavia -->
+            <li><a href="./pages/eventos.html">EVENTOS</a></li>
+            <li><a href="./pages/fotos.html">FOTOS</a></li>
+            <li><a href="./pages/merch.html">MERCHANDISING</a></li>
+            <li><a href="./pages/contacto.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+</header> <!-- Fin de Menu de navegacion --> 
 <body>
-<!-- Comienzo de tabla en la cual se muestran las caracteristicas del curso -->    
-    <table border="1">
+<!-- Comienzo de tabla en la cual se muestran las caracteristicas del curso -->   
+
+
+    <section>
+        <div class="tallerDJ">
+            <div class="tallerDJ__body">
+                <div class="tallerDJ__objetivos">
+                    <h1>Objetivos y caracteristicas generales</h1>
+                    <ul>
+                        <li>Conocer qué es, de dónde viene y qué hace un DJ.</li>
+                        <li>Diferenciar diferentes géneros y estilos musicales.</li>
+                        <li>Adquirir conocimientos sobre el entorno, el equipo de sonido y la cabina del DJ.</li>
+                        <li>Introducción a la mezcla entre canciones y a contar beats.</li>
+                        <li>Utilización del equipo de DJ. </li>
+                        <li>Iniciación a diferentes tecnicas de mezcla. Mash up en directo. </li>
+                        <li>Gran parte de los productos los podes conseguir en <a href="https://www.mercadolibre.com.ar/" target="_blank">Mercado Libre</a></li>
+                    </ul>
+                </div>
+
+                <div class="tallerDJ__equip">
+                    <h1>Necesidades Tecnicas(Equipo de Sonido)</h1>
+                    <ul>
+                        <li>2 platos de vinilo Technics 1210 SL (opcional, se puede hacer sin vinilo).</li>
+                        <li>2 reproductores CDJ Pioneer 2000 Nexus – 1 mesa de mezclas Pioneer Nexus. </li>
+                        <li>Cableado.</li>
+                        <li>1 mesa rectangular grande y robusta para soportar todo el equipo. </li>
+                        <li>1 proyector/pantalla para sacar imagen HDMI desde un ordenador portátil Macbook Pro. </li>
+                        <li>1 cable HDMI/VGA.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- <table border="1">
         <thead>
             <tr>
                 <th>Objetivos y caracteristicas generales</th>
@@ -53,7 +120,7 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
 <!-- Fin de tabla -->  
 <a href="#inicio_de_pagina">Ir al inicio</a>      
 </body>
