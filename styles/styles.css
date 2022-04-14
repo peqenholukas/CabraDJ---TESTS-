@@ -559,15 +559,20 @@ footer{
 .tallerDJ__merch{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr ;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 80px;
     padding: 30px;
     width: 95%;
     height: 70%;
     background: #8b4c04;
 }
 
+#campus{
+    font-size: 30px;
+    margin-left: 14em;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -596,6 +601,28 @@ footer{
     padding: 20px 30px;
     box-sizing: border-box;
     position: relative;
+}
+
+.form__container a{
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    color: #8b4c04;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.5s ease;
+}
+
+.form__container a:hover{
+    background: black;
+    color: white;
+}
+
+#form__campus{
+    height: 330px;
 }
 
 h2{
