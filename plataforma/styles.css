@@ -179,3 +179,8 @@ body{
     background: white;
     height: 1px;
 }
+
+.body__cursos--foro {
+    display: inline-block;
+}
+
