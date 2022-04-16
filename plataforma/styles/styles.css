@@ -277,3 +277,159 @@ body{
     color: #8b4c04;
 }
 
+.body__libros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    height: 20em;
+    margin: auto;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.book__item1{
+    width: 100%;
+    background: #4e3402;
+}
+
+.book__item1 img{
+    grid-column: 1/2;
+    width: 100%;
+    height: 70%;
+}
+
+.book__item1--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.book__item1--info h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.book__item1--info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; 
+    transition: 0.4s ease;  
+}
+
+.book__item1--info a:hover{
+    color: #000;
+}
+
+.book__item2{
+    width: 100%;
+    background: #4e3402;
+}
+
+.book__item2 img{
+    grid-column: 2/3;
+    width: 100%;
+    height: 70%;
+}
+
+.book__item2--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.book__item2--info h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.book__item2--info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; 
+    transition: 0.4s ease;  
+}
+
+.book__item2--info a:hover{
+    color: #000;
+}
+
+.book__item3{
+    width: 100%;
+    background: #4e3402;
+}
+
+.book__item3 img{
+    grid-column: 3/4;
+    width: 100%;
+    height: 70%;
+}
+
+.book__item3--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.book__item3--info h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.book__item3--info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; 
+    transition: 0.4s ease;  
+}
+
+.book__item3--info a:hover{
+    color: #000;
+}
+
+.book__item4{
+    width: 100%;
+    background: #4e3402;
+}
+
+.book__item4 img{
+    grid-column: 4/5;
+    width: 100%;
+    height: 70%;
+}
+
+.book__item4--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.book__item4--info h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.book__item4--info a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; 
+    transition: 0.4s ease;  
+}
+
+.book__item4--info a:hover{
+    color: #000;
+}
+
+
+
