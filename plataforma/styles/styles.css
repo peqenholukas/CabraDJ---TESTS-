@@ -6,7 +6,7 @@
 }
 
 body{
-    background: green;
+    background: #4e3402;
 }
 
             /* MENU */
@@ -80,7 +80,7 @@ body{
 
 .header__user{
     display: inline-block;
-    padding-left:  95%;
+    padding-left:  90%;
 }
 
 .header__user img{
@@ -98,13 +98,46 @@ body{
     list-style: none;
 }
 
+.header__user nav ul li ul{
+    display: none;
+    background: #2e2e2e;
+    padding: 20px;
+}
+
+.header__user nav ul li ul i{
+    color: white;
+}
+
+.header__user nav ul li ul a{
+    display: inline-block;
+    color: #8b4c04;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header__user nav ul li:hover ul{
+    display: block;
+    margin-top: 3px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+                /* BODY */
+
+.body__content{
+    display: flex;
+    
+}
+
 .body{
+    margin-top: 30px;
     display: inline-block;
     width: 80%;
-    height: 80vh;
+    height: 50em;
     background: #202020;
     margin-left: 40px;
-
+    border-radius: 30px;
+    box-shadow: 0 0 40px -10px #000; 
 }
 
 .body__cursos{
@@ -143,7 +176,7 @@ body{
     margin-left: 80px;
     padding: 20px;
     border-radius: 20px;
-    
+    box-shadow: 0 0 40px -10px #000;    
 }
 
 #title{
@@ -182,5 +215,46 @@ body{
 
 .body__cursos--foro {
     display: inline-block;
+}
+
+                /* INFO BODY */
+
+.body__cursos--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 100px;
+    width: auto;
+    color: white;
+}
+
+.body__cursos--info h1 span{
+    color: #8b4c04;
+}
+
+.body__foro {
+    text-align: center;
+    color: white;
+}
+
+.body__foro h1{
+    margin-bottom: 30px;
+}
+
+.body__foro a{
+    background: #8b4c04;
+    padding: 5px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+    transition: 0.3s ease;
+    box-shadow: 0 0 40px -10px #000;
+}
+
+.body__foro a:hover{
+    background: white;
+    color: #8b4c04;
 }
 
