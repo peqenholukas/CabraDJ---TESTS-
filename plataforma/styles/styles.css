@@ -315,7 +315,8 @@ body{
 .book__item1--info a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px; 
+    font-size: 40px;
+    margin-top: 10px; 
     transition: 0.4s ease;  
 }
 
@@ -351,7 +352,8 @@ body{
 .book__item2--info a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px; 
+    font-size: 40px;
+    margin-top: 10px; 
     transition: 0.4s ease;  
 }
 
@@ -387,7 +389,8 @@ body{
 .book__item3--info a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px; 
+    font-size: 40px;
+    margin-top: 10px; 
     transition: 0.4s ease;  
 }
 
@@ -423,7 +426,8 @@ body{
 .book__item4--info a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px; 
+    font-size: 40px;
+    margin-top: 10px; 
     transition: 0.4s ease;  
 }
 
@@ -437,9 +441,9 @@ body{
 .body__carrerasitems{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 85%;
-    height: 85%;
+    grid-template-rows: 1fr ;
+    width: 80%;
+    height: 50%;
     gap: 20px;
     margin: auto;
 }               
@@ -475,6 +479,17 @@ body{
 .body__carrerasitem1 a:hover{
     color: #8b4c04;
     background: #fff;
+}
+
+#carrer__tittle{
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 60px;
+}
+
+#carrer__tittle span{
+    color: #8b4c04;
 }
 
 #offer{
