@@ -93,6 +93,11 @@ body{
     color: rgb(139, 76, 4);
 }
 
+.respmenu nav ul li{
+    list-style: none;
+    
+}
+
 .respmenu a {
     color: inherit;
     text-decoration: none;
@@ -381,6 +386,7 @@ footer{
     margin: auto;
     display: inline-block;
 }
+
                 /* Fin del footer */
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -466,6 +472,8 @@ footer{
 .tallerDJ{
     color: white;
 }
+
+
 
 .tallerDJ__body{
     display: flex;
@@ -566,9 +574,16 @@ footer{
     background: #8b4c04;
 }
 
-#campus{
-    font-size: 30px;
-    margin-left: 14em;
+
+#campus li a{
+    font-size: 10px;
+    display: inline-block;
+    margin: 0;
+    color: #8b4c04;
+}
+
+#campus li a:hover{
+    color: green;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
