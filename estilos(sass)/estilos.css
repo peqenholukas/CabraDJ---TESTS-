@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* VARIABLES */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* INDEX */
+body {
+  background-color: #202020;
+}
+
+#body__index {
+  background: #202020;
+}
+
+.body__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.body__grid .body__background {
+  margin: auto;
+  padding: 50px;
+}
+
+.body__grid .body__background .body {
+  display: -ms-grid;
+  display: grid;
+}
+
+.body__grid .body__background .body .body__align {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  background-color: #1c1b20;
+  color: #fff;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Comienzo de menu de navegacion */
+.menu {
+  padding-left: 300px;
+  background-color: #202020;
+}
+
+.menu .menu__items {
+  list-style: none;
+  width: 100%;
+  margin: auto;
+}
+
+.menu .menu__items ul {
+  display: inline-block;
+}
+
+.menu .menu__items ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu .menu__items ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  display: block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.menu .menu__items ul li a:hover {
+  color: #8b4c04;
+}
+
+.menu .menu__items .menu__logo {
+  display: inline-block;
+}
+
+.menu .menu__items .menu__logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
+
+.menu .menu__items .menu__logo a span {
+  color: #8b4c04;
+}
+
+/* Comienzo de menu (RESPOSIVE) de navegacion */
+.respmenu nav ul li {
+  list-style: none;
+}
+
+.respmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  max-width: 200px;
+  background: #202020;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 10px;
+  padding: 10px;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+  opacity: 0;
+}
+
+.respmenu {
+  color: white;
+  position: relative;
+  background: #202020;
+  min-height: 48px;
+}
+
+.respmenu nav {
+  display: none;
+}
+
+.respmenu input:checked ~ nav {
+  display: block;
+}
+
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .respmenu {
+    display: none;
+  }
+}
+
+/* Fin de menu de navegacion */
+/* Comnienzo de playlists */
+.iframe__background {
+  background-image: url(../img/pexels-vishnu-r-nair-1105666.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.iframe__background .body__iframes {
+  color: #fff;
+  margin: 100px auto;
+  display: inline-block;
+}
+
+.iframe__background .body__iframes .playlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.iframe__background .body__iframes .playlist .playlists__yt {
+  margin: auto;
+}
+
+.iframe__background .body__iframes .playlist .playlists__spotify {
+  margin: auto;
+}
+
+/* Fin de playlists */
+/* TWITCH */
+.twitch__body {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.twitch__body .twitch__title {
+  padding: 20px 0 10px 20px;
+  font-size: 30px;
+}
+
+.twitch__body .twitch__logo {
+  width: 150px;
+  height: 150px;
+}
+
+.twitch__body .twitch__text {
+  padding: 20px 0 10px 20px;
+}
+
+/* DISCORD */
+.discord__body {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.discord__body .discord__title {
+  padding: 20px 0 10px 20px;
+  font-size: 30px;
+}
+
+.discord__body .discord__logo {
+  width: 150px;
+  height: 150px;
+}
+
+.discord__body .discord__text {
+  padding: 20px 0 10px 20px;
+}
+
+/* SPOTIFY */
+.spotify__body {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.spotify__body .spotify__title {
+  padding: 20px 0 10px 20px;
+  font-size: 30px;
+}
+
+.spotify__body .spotify__logo {
+  width: 150px;
+  height: 150px;
+}
+
+.spotify__body .spotify__text {
+  padding: 20px 0 10px 20px;
+}
+
+/* BOTON DE LEER MAS */
+.btn__seemore {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.btn__seemore:hover {
+  background-color: #8b4c04;
+  color: #fff;
+}
+
+/* Comienzo de aside */
+.aside__align {
+  padding: 50px;
+}
+
+.aside__align .aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  background-color: #1c1b20;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.aside__align .aside .aside__eventos {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  padding: 25px 25px;
+}
+
+.aside__align .aside .aside__eventos p a {
+  text-decoration: none;
+}
+
+.aside__align .aside .aside__eventos .social {
+  color: #8b4c04;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.aside__align .aside .aside__eventos .social:hover {
+  color: #fff;
+}
+
+.aside__align .aside .aside__twitch {
+  display: inline-block;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.aside__align .aside .aside__twitch .aside__twitch--logo a img {
+  display: inline-block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.aside__align .aside .aside__twittertimeline {
+  padding: 25px;
+}
+
+/* Fin de aside */
+/* Comienzo del footer */
+footer {
+  bottom: 0;
+  width: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 250px;
+  position: relative;
+}
+
+.footer__iconos a {
+  margin: auto;
+  display: inline-block;
+}
+/*# sourceMappingURL=estilos.css.map */

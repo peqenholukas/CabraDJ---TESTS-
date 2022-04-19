@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+            /* VARIABLES */
+
+$backcl: #202020;
+$backcl2: #1c1b20;
+$fontcl: #fff;
+$boxShadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+$fontcl2: #8b4c04;
+$transitions: 0.5s ease;
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+                /* INDEX */
+
+body{
+    background-color: $backcl;
+}
+
+#body__index{
+    background: #202020;
+}
+
+.body__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+        .body__background{
+            margin: auto;
+            padding: 50px;
+
+            .body{
+                display: grid;
+
+                .body__align{
+                    grid-column: 1/2;
+                    grid-row: 1/1;
+                    background-color: $backcl2;
+                    color: $fontcl;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-row: 1fr 1fr 1fr 1fr;
+                    box-shadow: $boxShadow;
+                    width: 100%;
+                }
+            }
+        }
+}
+
+                /* Comienzo de menu de navegacion */
+
+.menu{
+    padding-left: 300px;
+    background-color: $backcl;
+
+    .menu__items{
+        list-style: none;
+        width: 100%;
+        margin: auto;
+
+        ul{
+            display: inline-block;
+
+            li{
+                display: inline-block;
+                text-align: center;
+
+                a{
+                    text-decoration: none;
+                    color: $fontcl;
+                    padding: 20px;
+                    display: block;
+                    transition: $transitions;
+
+                    &:hover{
+                        color: $fontcl2;
+                    }
+                }
+            }
+        }
+    
+        .menu__logo{
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                font-size: 30px;
+                color: $fontcl;
+
+                span{
+                    color: $fontcl2;
+                }
+            }    
+        }
+    }    
+}
+
+                /* Comienzo de menu (RESPOSIVE) de navegacion */
+
+.respmenu nav ul li{
+    list-style: none;
+    
+}
+
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    max-width: 200px;
+    background: $backcl;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .respmenu {
+    color: white;
+    position: relative;
+    background: #202020;
+    min-height: 48px;
+  }
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+                /* MEDIA */
+                
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+}  
+
+@media screen and (min-width: 768px) {
+    .respmenu{
+        display: none;
+    }
+}
+
+                /* Fin de menu de navegacion */
+
+                /* Comnienzo de playlists */
+
+.iframe__background{
+    background-image: url(../img/pexels-vishnu-r-nair-1105666.jpg);
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    .body__iframes{
+        color: $fontcl;
+        margin: 100px auto;
+        display: inline-block;
+
+        .playlist{
+            display: flex;
+            width: 100%;
+            gap: 30px;
+
+            .playlists__yt{
+                margin: auto;
+            }
+            
+            .playlists__spotify{
+                margin: auto;
+            }
+        }
+    }
+}
+
+            /* Fin de playlists */        
+            
+                    /* TWITCH */
+
+.twitch__body{
+    grid-row: 2/3;
+
+    .twitch__title{
+        padding: 20px 0 10px 20px;  
+        font-size: 30px;
+
+    }
+
+    .twitch__logo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .twitch__text{
+        padding: 20px 0 10px 20px;  
+    }
+}
+
+
+
+                    /* DISCORD */
+
+.discord__body{
+    grid-column: 1/1;
+    grid-row: 3/4;
+
+    .discord__title{
+        padding: 20px 0 10px 20px;   
+        font-size: 30px;
+
+    }
+
+    .discord__logo{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .discord__text{
+        padding: 20px 0 10px 20px;   
+    }
+} 
+
+                    /* SPOTIFY */
+
+.spotify__body{
+    grid-column: 1/1;
+    grid-row: 4/5;
+
+    .spotify__title{
+        padding: 20px 0 10px 20px;   
+        font-size: 30px;
+
+    }
+
+    .spotify__logo{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .spotify__text{
+        padding: 20px 0 10px 20px;   
+    }                      
+}
+
+                /* BOTON DE LEER MAS */
+
+.btn__seemore{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        background-color: $fontcl2;
+        color: $fontcl;
+    }
+}  
+
+                /* Comienzo de aside */
+
+.aside__align{
+    padding: 50px;
+
+    .aside{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/3;
+        grid-row: 1/1;
+        background-color: $backcl2;
+        color: $fontcl;
+        box-shadow: $boxShadow;
+        margin: auto;
+
+        .aside__eventos{
+            display: inline-block;
+            margin: 0;
+            font-size: 20px;
+            padding: 25px 25px;
+
+            p a{
+                text-decoration: none;
+            }
+
+            .social{
+               color: $fontcl2;
+               transition: $transitions;
+
+               &:hover{
+                   color: $fontcl;
+               }
+            }
+        }
+
+        .aside__twitch{
+            display: inline-block;
+            font-size: 20px;
+            padding: 25px;
+
+            .aside__twitch--logo a img{
+                display: inline-block;
+                margin: auto;
+                width: 80%;
+                height: auto;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                
+            }
+        }
+
+        .aside__twittertimeline{
+            padding: 25px;
+        } 
+    }
+}
+
+                /* Fin de aside */
+
+                /* Comienzo del footer */
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 250px;
+    position: relative;
+} 
+
+.footer__iconos a{
+    margin: auto;
+    display: inline-block;
+}
+                
+                
