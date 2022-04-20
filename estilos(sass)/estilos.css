@@ -388,4 +388,232 @@ footer {
   margin: auto;
   display: inline-block;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SERVICIOS */
+#body__servicios {
+  background: #1c1b20;
+}
+
+.cards__body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.cards__body .cards {
+  width: 300px;
+  margin: 25px;
+  padding: 40px 20px;
+  background: linear-gradient(-45deg, #000000, #8b4c04);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-transition: 00.5s ease;
+  transition: 00.5s ease;
+}
+
+.cards__body .cards:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cards__body .cards .card__title i {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cards__body .cards .card__title h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.cards__body .cards .card__price {
+  color: #fff;
+  font-size: 25px;
+}
+
+.cards__body .cards .card__options ul {
+  margin-top: 20px;
+}
+
+.cards__body .cards .card__options ul li {
+  list-style: none;
+  color: #fff;
+}
+
+.cards__body .cards .card__btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cards__body .cards .card__btn:hover {
+  background: #000000;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* TALLERDJ */
+#tallerDJ__back {
+  background: linear-gradient(-45deg, #000000, #8b4c04);
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#tallerDJ__back h1 {
+  font-size: 30px;
+}
+
+#tallerDJ__back ul li {
+  font-size: 15px;
+}
+
+.tallerDJ {
+  color: #fff;
+  background: #1c1b20;
+}
+
+.tallerDJ .tallerDJ__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.tallerDJ .tallerDJ__body .tallerDJ__objetivos ul li {
+  list-style: none;
+}
+
+.tallerDJ .tallerDJ__body .tallerDJ__objetivos ul li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 00.3s ease;
+  transition: 00.3s ease;
+}
+
+.tallerDJ .tallerDJ__body .tallerDJ__objetivos ul li a:hover {
+  color: black;
+}
+
+.tallerDJ .tallerDJ__equip ul li {
+  list-style: none;
+}
+
+.tallerDJ .tallerDJ__botonpago a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  width: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  -webkit-transition: 00.3s ease;
+  transition: 00.3s ease;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  transition: 00.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.tallerDJ .tallerDJ__botonpago a:hover {
+  background: #8b4c04;
+  color: #fff;
+}
+
+.tallerDJ .tallerDJ__body-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(-45deg, #000000, #8b4c04);
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tallerDJ .tallerDJ__body-info p {
+  font-size: 25px;
+}
+
+.tallerDJ__merch {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 30px;
+  width: 95%;
+  height: 70%;
+  background: #8b4c04;
+}
+
+li #campus {
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  color: #8b4c04;
+}
+
+li #campus:hover {
+  color: #008000;
+  -webkit-box-shadow: lime;
+          box-shadow: lime;
+}
 /*# sourceMappingURL=estilos.css.map */
