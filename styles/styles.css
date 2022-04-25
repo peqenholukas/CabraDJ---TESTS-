@@ -633,6 +633,8 @@ footer{
     color: white;
 }
 
+
+
 #form__campus{
     height: 330px;
 }
@@ -784,7 +786,7 @@ body{
 .shop__title span{
     color: #8b4c04;
 }
-
+ 
 .shop__catalog{
     display: grid;
     margin: auto;
