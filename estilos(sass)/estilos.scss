@@ -15,7 +15,21 @@ $boxShadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 $fontcl2: #8b4c04;
 $transitions: 0.5s ease;
 $backgradient: linear-gradient(-45deg, #000000, #8b4c04);
+$backcl2-0: linear-gradient(-45deg, #1c1b20, #2b2a29);
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+            /* MAPS */
+
+/* $palette: (
+    'backcl': #202020;
+    'backcl2': #1c1b20;
+    'fontcl': #fff;
+    'boxShadow': 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    'fontcl2': #8b4c04;
+    'transitions': 0.5s ease;
+    'backgradient': linear-gradient(-45deg, #000000, #8b4c04);
+);            
+ */
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
                 /* INDEX */
@@ -235,7 +249,121 @@ body{
     }
 }
 
+                /* PAGINA COMPLEMENTARIA TWITCH */
+.body__twitch{
 
+    .body__background{
+        margin: 0;
+        background-image: url(../img/pexels-vishnu-r-nair-1105666.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 40em;
+    }   
+
+    .hr__div{
+        background: $backcl2;
+        height: 5em;
+        display: flex;
+         
+        h1{
+            color: $fontcl;
+            margin: auto;
+            font-size: 40px;
+
+            span{
+                color: $fontcl2;
+
+            }
+
+            #twitchspan{
+                color: #791e81;
+            }
+        }
+    }
+
+    .body__info{
+        display: grid;
+        grid-template-columns: 60% 43%;
+        grid-template-rows: 1fr;
+
+        .go__twitch{
+            margin: 30px;
+            box-shadow: $boxShadow;
+            background-color: $backcl2;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            
+            h1{
+                display: flex;
+                color: $fontcl;
+                font-size: 30px;
+                margin: auto;
+                justify-content: center;
+            }
+
+            .twitch__logo2 img{
+                display: flex;
+                width: 500px;
+                height: 300px;
+                margin: 20px auto;
+                justify-content: center;
+            }
+
+            .twitch__parrafo{
+                display: flex;
+                color: $fontcl;
+                margin: 20px 20px;
+            }
+
+            .twitch__iframe iframe{
+                display: flex;
+                justify-content: center;
+                margin: 20px auto;
+            }
+        }
+    }
+
+    .twitch__aside{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        background: $backcl2;
+        display: flex;
+        margin: 30px;
+        box-shadow: $boxShadow;
+        flex-direction: column;
+        width: 40%;
+
+        .search__bar{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 70%;
+            height: 30px;
+
+            label{
+                color: $fontcl;
+                font-size: 30px;
+            }
+        }
+
+        .bibliografias{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 15px;
+            margin-top: 70px;
+            color: $fontcl;
+            gap: 15px;
+
+            img{
+                width: 16em;
+                height: 20em;
+            }
+        }
+    }
+}
 
                     /* DISCORD */
 
