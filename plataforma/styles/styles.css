@@ -555,6 +555,8 @@ body{
     .body__carrerasitems{
         grid-template-columns: 1fr;
         padding-bottom: 30px;
+        margin: auto;
+        width: 80%;
     }
     
     /* BIBLIOGRAFIA */

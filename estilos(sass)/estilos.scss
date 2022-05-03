@@ -190,9 +190,14 @@ body{
   .respmenu nav {
     display: none;
   }
+
   
   .respmenu input:checked ~ nav {
     display: block;
+  }
+
+  .respmenu input:checked ~ nav ul{
+    padding-left: 0;
   }
   
   .respmenu input:checked ~ .fa-bars {
@@ -210,26 +215,9 @@ body{
         display: none;
     }
 
-    .body__iframes{
-        .playlist{
-            flex-direction: column;
-            margin: auto;
-            width: auto;
-            height: auto;
-
-            .playlists__yt{
-                iframe{
-                    width: 100%;
-                    height: 190%;
-                }    
-            }
-
-            .playlists__spotify{
-                iframe{
-                    width: auto;
-                    height: auto;
-                }    
-            }
+ .body__iframes .playlist{
+        iframe{
+            display: none;
         }
     }
 }  
