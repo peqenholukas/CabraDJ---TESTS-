@@ -808,7 +808,7 @@ footer{
 .flex--container{
     display: flex;
     width: 1000px;
-    height: 1000px;
+    height: auto;
     background: $backgradient;
     margin: auto;
     flex-wrap: wrap;
@@ -830,6 +830,11 @@ footer{
 
         .party__title{
             font-size: 40px;
+        }
+
+        .party__desc{
+            font-size: 20px;
+            margin-bottom: 20px;
         }
 
         a{

@@ -218,22 +218,8 @@ body {
   .menu {
     display: none;
   }
-  .body__iframes .playlist {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    width: auto;
-    height: auto;
-  }
-  .body__iframes .playlist .playlists__yt iframe {
-    width: 100%;
-    height: 190%;
-  }
-  .body__iframes .playlist .playlists__spotify iframe {
-    width: auto;
-    height: auto;
+  .body__iframes .playlist iframe {
+    display: none;
   }
 }
 
@@ -915,7 +901,7 @@ li #campus:hover {
   display: -ms-flexbox;
   display: flex;
   width: 1000px;
-  height: 1000px;
+  height: auto;
   background: linear-gradient(-45deg, #000000, #8b4c04);
   margin: auto;
   -ms-flex-wrap: wrap;
@@ -939,6 +925,15 @@ li #campus:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
+}
+
+.flex--container .eventos .party__title {
+  font-size: 40px;
+}
+
+.flex--container .eventos .party__desc {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .flex--container .eventos a {
@@ -1304,6 +1299,7 @@ li #campus:hover {
     margin-top: 100px;
     width: 80%;
     height: auto;
+    margin-bottom: 30px;
   }
   /* FOTOS */
   #galeria .galeria__fotos {
