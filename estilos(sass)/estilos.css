@@ -60,16 +60,16 @@ body {
 }
 
 .body__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  margin: auto;
 }
 
 .body__grid .body__background {
   margin: auto;
+  margin-top: 0;
   padding: 50px;
 }
 
@@ -79,11 +79,6 @@ body {
 }
 
 .body__grid .body__background .body .body__align {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  grid-row: 1/1;
   background-color: #1c1b20;
   color: #fff;
   margin: auto;
@@ -303,12 +298,18 @@ body {
   font-size: 30px;
 }
 
-.twitch__body .twitch__logo {
+.twitch__body .twitch__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.twitch__body .twitch__desc .twitch__logo {
   width: 150px;
   height: 150px;
 }
 
-.twitch__body .twitch__text {
+.twitch__body .twitch__desc .twitch__text {
   padding: 20px 0 10px 20px;
 }
 
@@ -488,12 +489,18 @@ body {
   font-size: 30px;
 }
 
-.discord__body .discord__logo {
+.discord__body .discord__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.discord__body .discord__desc .discord__logo {
   width: 150px;
   height: 150px;
 }
 
-.discord__body .discord__text {
+.discord__body .discord__desc .discord__text {
   padding: 20px 0 10px 20px;
 }
 
@@ -511,12 +518,18 @@ body {
   font-size: 30px;
 }
 
-.spotify__body .spotify__logo {
+.spotify__body .spotify__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spotify__body .spotify__desc .spotify__logo {
   width: 150px;
   height: 150px;
 }
 
-.spotify__body .spotify__text {
+.spotify__body .spotify__desc .spotify__text {
   padding: 20px 0 10px 20px;
 }
 
@@ -541,7 +554,8 @@ body {
 
 /* Comienzo de aside */
 .aside__align {
-  padding: 50px;
+  padding: 50px 50px 0px 0px;
+  width: 30%;
 }
 
 .aside__align .aside {
@@ -552,6 +566,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  margin: auto auto;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -620,7 +636,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  height: 250px;
+  padding: 90px;
+  height: auto;
   position: relative;
 }
 
@@ -1264,21 +1281,33 @@ li #campus:hover {
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* MEDIA */
+@media screen and (max-width: 1169px) {
+  .playlist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* INDEX */
   .body__grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .aside {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
+  .body__grid .aside__align {
+    width: 80%;
+    padding: 0 50px;
+    margin: auto;
+  }
+  .body__grid .aside__align .aside {
+    width: 100%;
   }
   .playlist {
     display: inline-block;
@@ -1288,7 +1317,14 @@ li #campus:hover {
   }
   /* SERVICIOS */
   .cards__body {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /* EVENTOS */
   .flex--container {

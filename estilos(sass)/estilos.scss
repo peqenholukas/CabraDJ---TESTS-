@@ -59,20 +59,19 @@ body{
 }
 
 .body__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    
+    display: flex;
+    padding: 30px;
+    margin: auto;
+
         .body__background{
             margin: auto;
+            margin-top: 0;
             padding: 50px;
 
             .body{
                 display: grid;
 
                 .body__align{
-                    grid-column: 1/2;
-                    grid-row: 1/1;
                     background-color: $backcl2;
                     color: $fontcl;
                     margin: auto;
@@ -291,15 +290,19 @@ body{
 
     .twitch__title{
         @include img__title;
-
     }
 
-    .twitch__logo{
-        @include img__logo;
-    }
+    .twitch__desc{
+        display: flex;
 
-    .twitch__text{
-        @include img__text;  
+        .twitch__logo{
+            @include img__logo;
+        }
+
+        .twitch__text{
+            @include img__text;  
+        }
+    
     }
 }
 
@@ -430,12 +433,16 @@ body{
 
     }
 
-    .discord__logo{
-        @include img__logo;
-    }
-    
-    .discord__text{
-        @include img__text;   
+    .discord__desc{
+        display: flex;
+
+        .discord__logo{
+            @include img__logo;
+        }
+        
+        .discord__text{
+            @include img__text;   
+        }
     }
 } 
 
@@ -448,17 +455,20 @@ body{
     .spotify__title{
         padding: 20px 0 10px 20px;   
         font-size: 30px;
-
     }
 
-    .spotify__logo{
-        width: 150px;
-        height: 150px;
+    .spotify__desc{
+        display: flex;
+        
+        .spotify__logo{
+            width: 150px;
+            height: 150px;
+        }
+        
+        .spotify__text{
+            padding: 20px 0 10px 20px;   
+        }
     }
-    
-    .spotify__text{
-        padding: 20px 0 10px 20px;   
-    }                      
 }
 
                 /* BOTON DE LEER MAS */
@@ -483,11 +493,14 @@ body{
                 /* Comienzo de aside */
 
 .aside__align{
-    padding: 50px;
+    padding: 50px 50px 0px 0px;
+    width: 30%;
 
     .aside{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: auto auto;
         grid-column: 2/3;
         grid-row: 1/1;
         background-color: $backcl2;
@@ -549,7 +562,8 @@ footer{
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 250px;
+    padding: 90px;
+    height: auto;
     position: relative;
 } 
 
@@ -1260,17 +1274,27 @@ footer{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
                 /* MEDIA */
+@media screen and (max-width: 1169px){
+    .playlist{
+        display: flex;
+        flex-direction: column;
+    }  
+}
+
 @media screen and (max-width: 768px) {
     /* INDEX */
     .body__grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+    
+    .aside__align{
+        width: 80%;
+        padding: 0 50px;
+        margin: auto;
+        .aside{
+            width: 100%;
+        }
     }
-
-    .aside{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+}
 
     .playlist{
         display: inline-block;
@@ -1282,7 +1306,9 @@ footer{
 
     /* SERVICIOS */
     .cards__body{
-        display: inline-block;
+        display: flex;
+        margin: 20px auto;
+        flex-direction: column;
     }
 
     /* EVENTOS */
