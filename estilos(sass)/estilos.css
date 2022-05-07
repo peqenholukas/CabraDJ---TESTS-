@@ -345,25 +345,23 @@ body {
 }
 
 .body__twitch .body__info {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% 43%;
-      grid-template-columns: 60% 43%;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .body__twitch .body__info .go__twitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 30px;
   -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
   background-color: #1c1b20;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
 }
 
 .body__twitch .body__info .go__twitch h1 {
@@ -378,19 +376,13 @@ body {
           justify-content: center;
 }
 
-.body__twitch .body__info .go__twitch .twitch__logo2 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500px;
-  height: 300px;
-  margin: 20px auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.body__twitch .body__info .go__twitch img {
+  margin: auto;
+  width: 20em;
+  height: 14em;
 }
 
-.body__twitch .body__info .go__twitch .twitch__parrafo {
+.body__twitch .body__info .twitch__parrafo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +390,7 @@ body {
   margin: 20px 20px;
 }
 
-.body__twitch .body__info .go__twitch .twitch__iframe iframe {
+.body__twitch .body__info .twitch__iframe iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,12 +401,6 @@ body {
 }
 
 .body__twitch .twitch__aside {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
   background: #1c1b20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,6 +461,29 @@ body {
   height: 20em;
 }
 
+@media screen and (max-width: 768px) {
+  .body__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .body__info .go__twitch img {
+    width: auto;
+    height: auto;
+  }
+  .body__info .go__twitch .twitch__iframe {
+    display: none;
+  }
+  .body__info .twitch__aside {
+    width: auto;
+    margin: 15px auto;
+  }
+  .body__info .twitch__aside .twitch__aside--elementos {
+    margin: auto;
+  }
+}
+
 /* DISCORD */
 .discord__body {
   -ms-grid-column: 1;
@@ -502,6 +511,195 @@ body {
 
 .discord__body .discord__desc .discord__text {
   padding: 20px 0 10px 20px;
+}
+
+/* PAGINA COMPLEMENTARIA DISCORD */
+.body__discord .body__background {
+  margin: 0;
+  background-image: url(../img/pexels-vishnu-r-nair-1105666.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 40em;
+}
+
+.body__discord .hr__div {
+  background: #1c1b20;
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body__discord .hr__div h1 {
+  color: #fff;
+  margin: auto;
+  font-size: 40px;
+}
+
+.body__discord .hr__div h1 span {
+  color: #8b4c04;
+}
+
+.body__discord .hr__div h1 #discordspan {
+  color: #4c6bac;
+}
+
+.body__discord .body__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body__discord .body__info .go__discord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #1c1b20;
+  height: 80%;
+}
+
+.body__discord .body__info .go__discord h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 30px;
+  margin: 10px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body__discord .body__info .go__discord img {
+  margin: 0 auto;
+  width: 20em;
+  height: 14em;
+}
+
+.body__discord .body__info .discord__parrafo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin: 20px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body__discord .body__info a {
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #8b4c04;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.body__discord .body__info a:hover {
+  color: #fff;
+}
+
+.body__discord .body__info .discord__iframe iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+}
+
+.body__discord .discord__aside {
+  background: #1c1b20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.body__discord .discord__aside .search__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 70%;
+  height: 30px;
+}
+
+.body__discord .discord__aside .search__bar label {
+  color: #fff;
+  font-size: 30px;
+}
+
+.body__discord .discord__aside .bibliografias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+  margin-top: 70px;
+  color: #fff;
+  gap: 15px;
+}
+
+.body__discord .discord__aside .bibliografias img {
+  width: 16em;
+  height: 20em;
+}
+
+@media screen and (max-width: 768px) {
+  .body__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .body__info .go__discord img {
+    width: auto;
+    height: auto;
+  }
+  .body__info .go__discord .discord__iframe {
+    display: none;
+  }
+  .body__info .discord__aside {
+    width: auto;
+    margin: 15px auto;
+  }
+  .body__info .discord__aside .discord__aside--elementos {
+    margin: auto;
+  }
 }
 
 /* SPOTIFY */

@@ -339,16 +339,14 @@ body{
     }
 
     .body__info{
-        display: grid;
-        grid-template-columns: 60% 43%;
-        grid-template-rows: 1fr;
+        display: flex;
 
         .go__twitch{
+            display: flex;
+            flex-direction: column;
             margin: 30px;
             box-shadow: $boxShadow;
             background-color: $backcl2;
-            grid-column: 1/2;
-            grid-row: 1/2;
             
             h1{
                 display: flex;
@@ -357,14 +355,13 @@ body{
                 margin: auto;
                 justify-content: center;
             }
-
-            .twitch__logo2 img{
-                display: flex;
-                width: 500px;
-                height: 300px;
-                margin: 20px auto;
-                justify-content: center;
-            }
+                
+                img{
+                    margin: auto;
+                    width: 20em;
+                    height: 14em;
+                }
+        }
 
             .twitch__parrafo{
                 display: flex;
@@ -377,12 +374,9 @@ body{
                 justify-content: center;
                 margin: 20px auto;
             }
-        }
     }
 
     .twitch__aside{
-        grid-row: 1/2;
-        grid-column: 2/3;
         background: $backcl2;
         display: flex;
         margin: 30px;
@@ -422,6 +416,32 @@ body{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .body__info{
+        flex-direction: column;
+
+        .go__twitch{
+                img{
+                    width: auto;
+                    height: auto;
+                }
+
+            .twitch__iframe{
+                display: none;
+            }
+        }
+
+        .twitch__aside{
+            width: auto;
+            margin: 15px auto;
+
+            .twitch__aside--elementos{
+                margin: auto;
+            }
+        }
+    }
+}
+
                     /* DISCORD */
 
 .discord__body{
@@ -444,7 +464,160 @@ body{
             @include img__text;   
         }
     }
-} 
+}
+
+                /* PAGINA COMPLEMENTARIA DISCORD */
+
+.body__discord{
+
+    .body__background{
+        margin: 0;
+        background-image: url(../img/pexels-vishnu-r-nair-1105666.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 40em;
+    }   
+
+    .hr__div{
+        background: $backcl2;
+        height: 5em;
+        display: flex;
+         
+        h1{
+            color: $fontcl;
+            margin: auto;
+            font-size: 40px;
+
+            span{
+                color: $fontcl2;
+
+            }
+
+            #discordspan{
+                color: #4c6bac;
+            }
+        }
+    }
+
+    .body__info{
+        display: flex;
+
+        .go__discord{
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            box-shadow: $boxShadow;
+            background-color: $backcl2;
+            height: 80%;
+
+            
+            h1{
+                display: flex;
+                color: $fontcl;
+                font-size: 30px;
+                margin: 10px auto;
+                justify-content: center;
+            }
+                
+                img{
+                    margin: 0 auto;
+                    width: 20em;
+                    height: 14em;
+                }
+
+        }
+
+            .discord__parrafo{
+                display: flex;
+                color: $fontcl;
+                margin: 20px 20px;
+                flex-direction: column;
+            }
+
+            a{
+                font-size: 20px;
+                margin-top: 10px;
+                text-decoration: none;
+                color: $fontcl2;
+                transition: $transitions;
+
+                &:hover{
+                    color: $fontcl;
+                }
+            }
+
+            .discord__iframe iframe{
+                display: flex;
+                justify-content: center;
+                margin: 20px auto;
+            }
+    }
+
+    .discord__aside{
+        background: $backcl2;
+        display: flex;
+        margin: 30px;
+        box-shadow: $boxShadow;
+        flex-direction: column;
+        width: 40%;
+
+        .search__bar{
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 70%;
+            height: 30px;
+
+            label{
+                color: $fontcl;
+                font-size: 30px;
+            }
+        }
+
+        .bibliografias{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 15px;
+            margin-top: 70px;
+            color: $fontcl;
+            gap: 15px;
+
+            img{
+                width: 16em;
+                height: 20em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body__info{
+        flex-direction: column;
+
+        .go__discord{
+                img{
+                    width: auto;
+                    height: auto;
+                }
+
+            .discord__iframe{
+                display: none;
+            }
+        }
+
+        .discord__aside{
+            width: auto;
+            margin: 15px auto;
+
+            .discord__aside--elementos{
+                margin: auto;
+            }
+        }
+    }
+}
 
                     /* SPOTIFY */
 
