@@ -1051,15 +1051,16 @@ footer{
 
 #galeria{
     display: flex;
+    justify-content: center;
     
     .galeria__fotos{
-        display: grid;
+        display: flex;
         margin: auto;
+        flex-wrap: wrap;
         padding-top: 100px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr ;
         gap: 20px;
         margin-bottom: 200px;
+        width: 80%;
 
         img{
             width: 400px;
@@ -1492,12 +1493,11 @@ footer{
         width: 80%;
         height: auto;
         margin-bottom: 30px;
+        flex-direction: column;
     }
     
     /* FOTOS */
     #galeria .galeria__fotos{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         width: 80%;
     }
 

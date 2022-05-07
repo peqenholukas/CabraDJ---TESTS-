@@ -1176,19 +1176,22 @@ li #campus:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #galeria .galeria__fotos {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 100px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   gap: 20px;
   margin-bottom: 200px;
+  width: 80%;
 }
 
 #galeria .galeria__fotos img {
@@ -1534,13 +1537,13 @@ li #campus:hover {
     width: 80%;
     height: auto;
     margin-bottom: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /* FOTOS */
   #galeria .galeria__fotos {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
     width: 80%;
   }
   /* SHOP */
