@@ -195,10 +195,6 @@ body{
   .respmenu input:checked ~ nav {
     display: block;
   }
-
-  .respmenu input:checked ~ nav ul{
-    padding-left: 0;
-  }
   
   .respmenu input:checked ~ .fa-bars {
     display: none;
@@ -831,6 +827,11 @@ footer{
         padding: 40px;
         justify-content: center;
         color: $fontcl;
+
+        .party__title{
+            font-size: 40px;
+        }
+
         a{
             color: #000;
             text-decoration: none;
@@ -1286,6 +1287,7 @@ footer{
         margin-top: 100px;
         width: 80%;
         height: auto;
+        margin-bottom: 30px;
     }
     
     /* FOTOS */
